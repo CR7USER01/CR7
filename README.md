@@ -1,5 +1,4 @@
-# CR7
-HELLO , THIS IS MY PROFILE
+
 <h1 align="center">Hi 👋, I'm JITU</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
