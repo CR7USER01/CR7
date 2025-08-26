@@ -1,3 +1,4 @@
+<img width="925" height="488" alt="Screenshot 2023-12-20 010829" src="https://github.com/user-attachments/assets/dfb3308e-8151-42d7-839c-9fc559132404" />
 name: Generate Snake
 on:
 schedule: [{cron: "0 0 * * *"}] # every midnight UTC
