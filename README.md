@@ -1,4 +1,27 @@
+name: Generate Snake
+on:
+schedule: [{cron: "0 0 * * *"}] # every midnight UTC
+workflow_dispatch:
+push: {branches: [main]}
 
+
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v4
+- uses: Platane/snk@v3
+with:
+github_user_name: your-username
+outputs: |
+dist/snake.svg
+dist/snake-dark.svg?palette=github-dark
+- uses: crazy-max/ghaction-github-pages@v4
+with:
+target_branch: output
+build_dir: dist
+env:
+GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 <h1 align="center">Hi 👋, I'm JITU</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
